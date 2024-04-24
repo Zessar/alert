@@ -1,0 +1,936 @@
+@import url(/root.css);
+
+body {
+    border: 4px solid black;
+    height: 100vh;
+    background-color: rgb(246, 243, 243);
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.linea {
+    height: 20px;
+    border-radius: 15px;
+    width: 100px;
+    margin: 5px;
+    background-color: var(--grey);
+}
+
+.button {
+    border: none;
+    width: 200px;
+    color: var(--white);
+    background-color: var(--grey);
+    padding: 15px;
+    margin: 5px;
+}
+
+.cabezera {
+    background-color: var(--grey);
+    display: flex;
+    padding: 6px;
+    .primerParrafo {
+        background-color: var(--ligth-red);
+        width: 50%;
+    }
+    .segundoParrafo {
+        background-color: var(--ligth-red);
+        width: 25%;
+    }
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+.pickingSuelo {
+    display: flex;
+    flex-direction: column;
+    .superior {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        .uno {
+            width: 10%;
+        }
+        .dos{
+            width: 60%;
+        }
+        .tres {
+            width: 56%;
+        }
+        .tresmedio {
+            width: 10%;
+        }
+        .arriba {
+            display: flex;
+            margin-bottom: 5px;
+            .unomedio {
+                width: 60%;
+                background-color: rgb(227, 225, 225); 
+            }
+        }
+        .medio {
+            display: flex;
+            .dosmedio {
+                width: 27%;
+               background-color: rgb(227, 225, 225);     
+            }
+        }
+        .abajo {
+            display: flex;
+            .tresmedio {
+                width: 10%;
+               background-color: rgb(227, 225, 225);     
+            }
+        }
+    }
+    .buttonPicking {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 210px;
+        .picking {
+            width: 100px;
+            margin: 2px;
+        }
+    }
+    .ubicacion-prenda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        .posicionPasillo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .estanteria {
+                margin: auto;
+                padding: 10px 0 10px 0;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .recuadro-posicion {
+                width: 100px;
+                margin-bottom: 15px;
+                padding: 5px;
+                border: 5px solid var(--black);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .numeroEstanteria {
+                    background-color: var(--grey);
+                    width: 80px;
+                    height: 30px;
+                    margin: 3px;
+                    border-radius: 15px;
+                }
+        }
+        }
+        .number {
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            p {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .alturaPosicion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .posicion {
+                padding: 5px 0 5px 0;
+                width: 100px;
+                background-color: var(--position-c);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .numero {
+                    background-color: var(--grey);
+                    width: 20px;
+                    height: 40px;
+                    margin: 3px;
+                    border-radius: 15px;
+                }
+                .letra {
+                    width: 40px;
+                }
+            }
+            .letraColor {
+                padding: 5px 0 5px 0;
+                width: 100px;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .numero {
+                    background-color: var(--grey);
+                    width: 20px;
+                    height: 40px;
+                    margin: 3px;
+                    border-radius: 15px;
+                }
+                .letra {
+                    width: 40px;
+                }
+            }
+        }
+        
+        .sku {
+            width: 30%;
+            margin: 0 0 0 40px;
+        }
+        .pick {
+            width: 15%;
+        }
+        .saltoSku {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 50px;
+        }
+        .skuPicking {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+        }
+        .Barra {
+            display: flex;
+            flex-direction: row;
+            padding: 0 30px 0 30px;
+            margin: 10px 0 10px 0;
+        }
+    .barra {
+        width: 100%;
+        margin-left: 20px;
+        height: 20px;
+        background-color: var(--white);
+    }
+    
+    .Dor {
+        display: flex;
+        flex-direction: row;
+        margin: 0 30px 35px 30px;
+    }
+    #dor {
+        margin: 5px 0 5px 15px;;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    .img {
+        margin-right: 5px;
+        width: 40px;
+        height: 49px;
+        border-radius: 5px;
+    }
+}
+
+.pickingAgv {
+    display: none;
+    flex-direction: column;
+    .buttonPicking {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 210px;
+        .picking {
+            width: 100px;
+            margin: 2px;
+        }
+    }
+    .ubicacion-prenda {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        .posicionPasillo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .estanteria {
+                margin: 7px auto;
+                text-align: center;
+                width: 100px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .recuadro-posicion {
+                width: 150px;
+                margin-bottom: 15px;
+                padding: 5px;
+                border: 5px solid var(--black);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .numeroEstanteria {
+                    background-color: var(--grey);
+                    width: 220px;
+                    height: 30px;
+                    margin: 3px;
+                    border-radius: 15px;
+                }
+        }
+        }
+        .number {
+            display: flex;
+            flex-direction: row;
+            height: 60px;
+            p {
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            .alturaPosicion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .posicion {
+                padding: 5px 0 5px 0;
+                width: 100px;
+                background-color: var(--white);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .numero {
+                    background-color: var(--grey);
+                    width: 20px;
+                    height: 40px;
+                    margin: 3px;
+                    border-radius: 15px;
+                }
+                .letra {
+                    width: 40px;
+                }
+            }
+            .letraColor {
+                padding: 5px 0 5px 0;
+                width: 100px;
+                background-color: var(--position-c);
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .numero {
+                    background-color: var(--grey);
+                    width: 20px;
+                    height: 40px;
+                    margin: 3px;
+                    border-radius: 15px;
+                }
+                .letra {
+                    width: 40px;
+                }
+            }
+        }
+        
+        .sku {
+            width: 80%;
+        }
+        .pick {
+            width: 15%;
+        }
+        .saltoSku {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            margin-top: 50px;
+        }
+        .skuPicking {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .camiseta {
+            background-color: var(--white);
+            width: 130px;
+            height: 100px;
+        }
+        }
+        .Barra {
+            display: flex;
+            flex-direction: row;
+            padding: 0 30px 0 30px;
+            margin: 10px 0 10px 0;
+        }
+    .barra {
+        width: 100%;
+        margin-left: 20px;
+        height: 20px;
+        background-color: var(--white);
+    }
+    
+    .Dor {
+        display: flex;
+        flex-direction: row;
+        margin: 0 30px 20px 30px;
+    }
+    #dor {
+        margin: 5px 0 5px 15px;;
+        width: 100%;
+        border: 2px solid black;
+        border-radius: 7px;
+    }
+    .img {
+        margin-right: 5px;
+        width: 40px;
+        height: 49px;
+        border-radius: 5px;
+    }
+    .color {
+        background-color: var(--colorCaja);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+        .camiseta {
+            width: 40px;
+            height: 40px;
+            margin-left: 15px;
+            background-color: white;
+        }
+    }
+    .cajas {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 10px 10px 20px 0;
+    .puntos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px 0 0;
+        .punto {
+            margin: 3px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: black;
+        }
+    }
+    .colorDos {
+        background-color: var(--colorCaja);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .colorTres {
+        background-color: var(--position-c);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .colorCuatro {
+        background-color: var(--position-f);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .colorCinco {
+        background-color: var(--position-h);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    .colorSeis {
+        background-color: var(--position-d);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+    }
+    p {
+        font-size: 17px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .camiseta {
+        width: 40px;
+        height: 35px;
+        background-color: white;
+    }
+    }
+}
+
+.pagEstanteria {
+    display: none;
+    flex-direction: column;
+    .Dor {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 30px 20px 30px;
+        #dor {
+            margin: 5px 0 5px 15px;;
+            width: 55%;
+            border: 2px solid black;
+            border-radius: 7px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+    h4 {
+        font-size: 85px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 52vh;
+    }
+    .buttonPicking {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 210px;
+        .picking {
+            width: 100px;
+            margin: 2px;
+        }
+    }
+}
+
+.opcionesEstanteria {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 275px;
+    .grey {
+        background-color: var(--smoke-grey);
+    }
+}
+
+.opcionesPickingAgv {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 275px;
+    .grey {
+        background-color: var(--smoke-grey);
+    }
+}
+
+.opcionesDos {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 275px;
+    .grey {
+        background-color: var(--smoke-grey);
+    }
+}
+
+.seguro {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    line-height: 1.5em;
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 415px;
+    }
+    .picking {
+        width: 100px;
+    }
+
+}
+
+.seguroExpedir {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5px;
+    padding: 20px;
+    line-height: 1.5em;
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 100px;
+        margin-bottom: 415px;
+    }
+    .picking {
+        width: 100px;
+    }
+
+}
+
+.pausar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 485px;
+}
+
+.agregarQuitar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        .input {
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid rgb(106, 105, 105);
+            margin: 3px 0 8px 0;
+        }
+        .textArea {
+            border-radius: 10px;
+        }
+    }
+    .button-section {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .section {
+        width: 100px;
+    }
+    }
+
+.sinSeleccionOT {
+    display: none;
+    flex-direction: column;
+    .Dos {
+        margin: 0;
+    }
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px 0 20px;
+        .input {
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid rgb(106, 105, 105);
+            margin: 3px 0 8px 0;
+        }
+        .label {
+            font-size: 14px;
+        }
+        .textArea {
+            border-radius: 10px;
+        }
+    }
+    .seleccionPosicion {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        padding: 5px 20px 10px 20px;
+        .inputs {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid rgb(106, 105, 105);
+        }
+        .img {
+            margin-right: 5px;
+            width: 40px;
+            height: 29px;
+            border: 2px solid var(--smoke-grey);
+            border-radius: 5px;
+        }
+    }
+    .plantas {
+        width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        padding: 0 20px 0 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .f {
+            display: flex;
+            flex-direction: column;
+            width: 23.3%;
+            margin-right: 10px;
+        }
+        .skus {
+            display: flex;
+            flex-direction: column;
+            width: 23.3%;
+            margin-right: 10px;
+        }
+        .total {
+            display: flex;
+            flex-direction: column;
+            width: 23.3%;
+            margin-right: 10px;
+        }
+        .personas {
+            display: flex;
+            flex-direction: column;
+            width: 23.3%;
+            margin-right: 10px;
+        }
+        .planta, .numeros {
+            width: 30px;
+        }
+        .titulo {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+    }
+    .h2 {
+        padding: 20px 0 0 62px;
+    }
+    .h3 {
+        padding: 20px 0 5px 30px;
+    }
+    .button-section {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+    }
+    }
+
+.añadirTienda {
+    display: none;
+    flex-direction: column;
+    .inputBulto {
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 8px;
+        h3 {
+            font-weight: bold;
+        }
+        input {
+            margin-left: 40px;
+        }
+    }
+    .superior {
+        margin-top: 0;
+        .arriba {
+            flex-direction: column;
+            .uno {
+                width: 30%;
+            }
+            .dos {
+                width: 37%;
+                background-color: var(--light-grey);
+            }
+        }
+        .Dos {
+            width: 57%;
+        }
+    }
+    .squadLocations {
+        width: 90%;
+        height: 63.6vh;
+        border: 5px solid black;
+        margin: 0 13px 5px 13px;
+        .lineas {
+            display: flex;
+           
+            flex-direction: row;
+            h2 {
+                font-size: 10px;
+                font-weight: bold;
+                padding: 4px;
+                border-bottom: 3px solid black;
+                border-right: 3px solid black;
+                text-align: center;
+            }
+            .alias {
+                .cuadro {
+                    border-bottom: 3px solid black;
+                    border-right: 3px solid black;
+                    width: 100%;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    padding: 3px 0 3px 0;
+                }
+                .one {
+                    background-color: aqua;
+                }
+                .two {
+                    background-color: rgb(225, 0, 255);
+                }
+                .three {
+                    background-color: rgb(0, 255, 64);
+                }
+                .four {
+                    background-color: rgb(255, 230, 0);
+                }
+                .five {
+                    background-color: rgb(255, 0, 34);
+                }
+                .six {
+                    background-color: rgb(0, 26, 255);
+                }
+                .finito {
+                    font-size: 9px;
+                    color: black;
+                    padding: 6px 3px 6px 3px;
+                }
+                .s {
+                    background-color: white;
+                    height: 25px;
+                }
+            }
+        }
+    }
+    .buton {
+        display: flex;
+        justify-content: center;
+        .button {
+            width: 100px;
+        }
+    }
+}
+/* --------------------------------------------------------------------------------------- */
+
+.superior {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    .uno {
+        width: 55%;
+    }
+    .dos{
+        width: 47%;
+    }
+    .tres {
+        width: 93%;
+    }
+    .arriba {
+        display: flex;
+        margin-bottom: 5px;
+        .unomedio {
+            width: 35%;
+            background-color: rgb(227, 225, 225); 
+        }
+    }
+    .abajo {
+        display: flex;
+        .dosmedio {
+            width: 43%;
+           background-color: rgb(227, 225, 225);     
+        }
+    }
+}
+
+.url {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6px 2px;
+    background-color: white;
+    .search {
+        display: flex;
+        justify-content: flex-end;
+        background-color: rgb(219, 218, 218);
+        width: 70%;
+        border-radius: 30px;
+        padding: 5px;
+    }
+    .searchImg {
+        margin-right: 4px;
+        width: 23px;
+        height: 23px;
+    }
+    .pag {
+        font-size: 13px;
+        font-weight: bolder;
+        border: 2px solid black;
+        border-radius: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 24px;
+        padding: 0 6px 0 6px;
+        margin-left: 8px;
+    }
+    .house {
+        margin-right: 3px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        .menuIcon {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+.principal {
+    display: none;
+    flex-direction: column;
+    margin: 20px 0 0 30px;
+    .lineasEntrada {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        margin: 10px 0 10px 0;
+.numeroDeCabecera {
+    background-color: var(--smoke-grey);
+    height: 20px;
+    width: 25px;
+    border-radius: 30px;
+}
+
+.puntoDeCabecera {
+    background-color: var(--smoke-grey);
+    height: 5px;
+    width: 5px;
+    border-radius: 30px;
+    margin: 0 3px 0 3px;
+}
+
+.gruionDeCabecera {
+background-color: var(--smoke-grey);
+    height: 20px;
+    width: 60%;
+    border-radius: 30px;
+}
+p{
+    margin: 0 3px 0 3px;
+}
+}
+}

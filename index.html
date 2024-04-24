@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <title>Documento</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="url">
+            <div class="home"><img class="house" src="/icons8-smart-home-32.png" alt=""></div>
+            <div class="search"><img class="searchImg" src="/icons8-search-32.png" alt=""></div>
+            <div class="pag">1</div>
+            <div class="menu"><img class="menuIcon" src="/icons8-menu-32.png" alt=""></div>
+        </section>
+        <section class="cabezera">
+            <div class="linea primerParrafo"></div>
+            <div class="linea segundoParrafo"></div>
+        </section>
+        <div class="pickingSuelo">
+            <section class="superior">
+                <div class="arriba">
+                    <div class="linea uno"></div>
+                    <div class="linea unomedio"></div>
+                </div>
+                <div class="medio">
+                    <div class="linea dos"></div>
+                    <div class="linea dosmedio"></div>
+                </div>
+                <div class="abajo">
+                    <div class="linea tres"></div>
+                    <div class="linea tresmedio"></div>
+                </div>
+            </section>
+            <section class="ubicacion-prenda">
+                <div class="posicionPasillo">
+                    <p class="estanteria">Pasillo</p>
+                    <div class="recuadro-posicion">
+                        <div class="numeroEstanteria"></div>
+                    </div>
+                </div>
+                <div class="number">
+                    <div class="alturaPosicion">
+                        <p>Posicion</p>
+                        <div class="letraColor">
+                            <div class="numero letra"></div>
+                        </div>
+                    </div>
+                    <div class="alturaPosicion">
+                        <p>Altura</p>
+                        <div class="posicion">
+                            <div class="numero letra"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="saltoSku">
+                    <div class="skuPicking">
+                        <p>Escanear la ubicacion</p>
+                        <div class="linea sku"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="Barra">
+                <label for="jor">0/2</label>
+                <div class="barra"></div>
+            </section>
+            <section class="Dor">
+                <img class="img" src="./escaner-de-codigo-de-barras.png"></img>
+                <input type="text" id="dor">
+            </section>
+            <section class="buttonPicking">
+                <button class="button picking">ACEPTAR</button>
+                <button class="button picking">OPCIONES</button>
+                <button class="button picking">CANCELAR</button>
+            </section>
+        </div>
+        <div class="pickingAgv">
+            <section class="ubicacion-prenda">
+                <div class="posicionPasillo">
+                    <p class="estanteria">Estanteria</p>
+                    <div class="recuadro-posicion">
+                        <div class="numeroEstanteria"></div>
+                    </div>
+                </div>
+                <div class="number">
+                    <div class="alturaPosicion">
+                        <p>Altura</p>
+                        <div class="letraColor">
+                            <div class="numero letra"></div>
+                        </div>
+                    </div>
+                    <div class="alturaPosicion">
+                        <p>Posicion</p>
+                        <div class="posicion">
+                            <div class="numero letra"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="saltoSku">
+                    <div class="skuPicking">
+                        <div class="linea sku"></div>
+                        <div class="linea pick"></div>
+                    </div>
+                    <div class="camiseta"></div>
+                </div>
+            </section>
+            <section class="Barra">
+                <label for="jor">0/2</label>
+                <div class="barra"></div>
+            </section>
+            <section class="Dor">
+                <img class="img" src="./escaner-de-codigo-de-barras.png"></img>
+                <input type="text" id="dor">
+            </section>
+            <section class="color">
+                <p>T2</p>
+                <div class="camiseta"></div>
+            </section>
+            <section class="cajas">
+                <div class="puntos">
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                    <div class="punto"></div>
+                </div>
+                <div class="colorSeis">
+                    <div class="camiseta"></div>
+                    <p>T23</p>
+                </div>
+                <div class="colorCinco">
+                    <div class="camiseta"></div>
+                    <p>T11</p>
+                </div>
+                <div class="colorCuatro">
+                    <div class="camiseta"></div>
+                    <p>T7</p>
+                </div>
+                <div class="colorTres">
+                    <div class="camiseta"></div>
+                    <p>T9</p>
+                </div>
+                <div class="colorDos">
+                    <div class="camiseta"></div>
+                    <p>T2</p>
+                </div>
+            </section>
+            <section class="buttonPicking">
+                <button class="button picking">ACEPTAR</button>
+                <button class="button picking">OPCIONES</button>
+                <button class="button picking">CANCELAR</button>
+            </section>
+        </div>
+        <div class="pagEstanteria">
+            <section class="Dor">
+                <p>Estanteria</p>
+                <input type="text" id="dor">
+            </section>
+            <div>
+                <h4>45</h4>
+            </div>
+            <section class="buttonPicking">
+                <button class="button picking">ACEPTAR</button>
+                <button class="button picking">OPCIONES</button>
+                <button class="button picking">CANCELAR</button>
+            </section>
+        </div>
+        <div class="opcionesEstanteria">
+            <button class="button">HISTORIAL</button>
+            <button class="button">DESTINOS</button>
+            <button class="button">ASIGNAR</button>
+            <button class="button">DESASIGNAR</button>
+            <button class="button">AÑADIR TIENDA</button>
+            <button class="button">PAUSAR</button>
+            <button class="button">CERRAR</button>
+            <button class="button">VOVLER</button>
+        </div>
+        <div class="opcionesPickingAgv">
+            <button class="button">SKU Agotado</button>
+            <button class="button">DESTINOS</button>
+            <button class="button">PAUSAR</button>
+            <button class="button">CERRAR</button>
+            <button class="button">VOVLER</button>
+        </div>
+        <div class="opcionesDos">
+            <button class="button">Enviar a expedicion</button>
+            <button class="button">Salir sin expedir</button>
+            <button class="button">CANCELAR</button>
+            <button class="button">VOVLER</button>
+        </div>
+        <div class="seguro">
+            <p>¿Seguro que quieres "PAUSAR" la asignacion actual?</p>
+            <div class="botones">
+                <button class="button picking">SI</button>
+                <button class="button picking">NO</button>
+            </div>
+        </div>
+        <div class="seguroExpedir">
+            <p>¿Seguro que quieres enviar a Expedicion?</p>
+            <div class="botones">
+                <button class="button picking">SI</button>
+                <button class="button picking">NO</button>
+            </div>
+        </div>
+        <div class="pausar">
+            <button class="button">COMENZAR</button>
+            <button class="button">VOVLER</button>
+            <button class="button">CANCELAR</button>
+        </div>
+        <div class="agregarQuitar">
+            <!-- <section class="cabezeraDos">
+                <div class="linea primerParrafo"></div>
+                <div class="linea segundoParrafo"></div>
+            </section> -->
+            <section class="superior">
+                <div class="arriba">
+                    <div class="linea uno"></div>
+                    <div class="linea unomedio"></div>
+                </div>
+                <div class="abajo">
+                    <div class="linea dos"></div>
+                    <div class="linea dosmedio"></div>
+                </div>
+                <div class="linea tres"></div>
+            </section>
+            <section class="inputs">
+                <label for="primero" class="label">Primer puesto</label>
+                <input type="text" class="input" id="primero">
+                <label for="segundo" class="label">Ultimo puesto</label>
+                <input type="text" class="input" id="segundo">
+            </section>
+            <section class="text">
+                <textarea name="" id="" cols="20" rows="10" class="textArea"></textarea>
+            </section>
+            <section class="button-section">
+                <button class="button section">Aceptar</button>
+                <button class="button section">Cancelar</button>
+            </section>
+        </div>
+        <div class="sinSeleccionOT">
+            <!-- <section class="cabezeraTres">
+                <div class="linea primerParrafo"></div>
+                <div class="linea segundoParrafo"></div>
+            </section> -->
+            <section class="superior Dos">
+                <div class="arriba">
+                    <div class="linea uno"></div>
+                    <div class="linea unomedio"></div>
+                </div>
+                <div class="abajo">
+                    <div class="linea dos"></div>
+                    <div class="linea dosmedio"></div>
+                </div>
+            </section>
+            <section class="inputs">
+                <label for="segundo" class="label">Seleccione otra localizacion</label>
+                <input type="text" class="input" id="segundo">
+            </section>
+            <section class="h3">
+                <h3>Seleccione un area de stock</h3>
+            </section>
+            <section class="plantas">
+                <div class="f">
+                    <p class="titulo">Area-Stock</p>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+                    <div class="linea planta"></div>
+
+                </div>
+                <div class="skus">
+                    <p class="titulo">Skus</p>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+
+                </div>
+                <div class="total">
+                    <p class="titulo">Unidades</p>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+
+                </div>
+                <div class="personas">
+                    <p class="titulo">Personas</p>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+                    <div class="linea numeros"></div>
+
+                </div>
+            </section>
+            <section class="h2">
+                <h2>Escanee posicion de inicio</h2>
+            </section>
+            <section class="seleccionPosicion">
+                <img class="img" src="./escaner-de-codigo-de-barras.png"></img>
+                <input type="text" class="inputs" id="segundo">
+            </section>
+            <section class="button-section">
+                <button class="button section">Aceptar</button>
+                <button class="button section">Cancelar</button>
+            </section>
+        </div>
+        <div class="añadirTienda">
+            <section class="superior Dos">
+                <div class="arriba">
+                    <div class="linea uno"></div>
+                    <div class="linea dos"></div>
+                </div>
+                <div class="abajo">
+                    <!-- <div class="linea Dos"></div> -->
+                    <div class="inputBulto">
+                        <h3>Bulto</h3>
+                        <input type="text">
+                    </div>
+                </div>
+            </section>
+            <section class="squadLocations">
+                <div class="lineas">
+                    <div class="alias">
+                        <h2>Alias</h2>
+                        <div class="cuadro one">T1</div>
+                        <div class="cuadro two">T2</div>
+                        <div class="cuadro three">T3</div>
+                        <div class="cuadro four">T4</div>
+                        <div class="cuadro five">T7</div>
+                        <div class="cuadro six">T6</div>
+                        <div class="cuadro one">T7</div>
+                        <div class="cuadro two">T8</div>
+                        <div class="cuadro three">T9</div>
+                        <div class="cuadro four">T10</div>
+                        <div class="cuadro five">T11</div>
+                        <div class="cuadro six">T12</div>
+                        <!-- <div class="cuadro one s">   </div> -->
+                        <div class="cuadro two">T14</div>
+                        <div class="cuadro three">T15</div>
+                        <div class="cuadro four">T16</div>
+                        <div class="cuadro five">T17</div>
+                        <div class="cuadro six">T18</div>
+                        <div class="cuadro one">T19</div>
+                    </div>
+                    <div class="alias">
+                        <h2 >Contenedor</h2>
+                        <div class="cuadro finito">305559600014710001235</div>
+                        <div class="cuadro finito">305559600014710001236</div>
+                        <div class="cuadro finito">305559600014720002341</div>
+                        <div class="cuadro finito">305559600014720002342</div>
+                        <div class="cuadro finito">305559600014730003587</div>
+                        <div class="cuadro finito">305559600014730003588</div>
+                        <div class="cuadro finito">305559600027510001235</div>
+                        <div class="cuadro finito">305559600027510001236</div>
+                        <div class="cuadro finito">305559600027520002341</div>
+                        <div class="cuadro finito">305559600027520002342</div>
+                        <div class="cuadro finito">305559600027530003587</div>
+                        <div class="cuadro finito">305559600027530003588</div>
+                        <!-- <div class="cuadro finito s">                     </div> -->
+                        <div class="cuadro finito">305559600665910001236</div>
+                        <div class="cuadro finito">305559600665920002341</div>
+                        <div class="cuadro finito">305559600665920002342</div>
+                        <div class="cuadro finito">305559600665930003587</div>
+                        <div class="cuadro finito">305559600665930003588</div>
+                        <div class="cuadro finito">305559600665910003124</div>
+                    </div>
+                    <div class="alias">
+                        <h2 >OT/Ola</h2>
+                        <div class="cuadro finito">605215</div>
+                        <div class="cuadro finito">605215</div>
+                        <div class="cuadro finito">605216</div>
+                        <div class="cuadro finito">605216</div>
+                        <div class="cuadro finito">605217</div>
+                        <div class="cuadro finito">605217</div>
+                        <div class="cuadro finito">605215</div>
+                        <div class="cuadro finito">605215</div>
+                        <div class="cuadro finito">605216</div>
+                        <div class="cuadro finito">605216</div>
+                        <div class="cuadro finito">605217</div>
+                        <div class="cuadro finito">605217</div>
+                        <!-- <div class="cuadro finito s">      </div> -->
+                        <div class="cuadro finito">605215</div>
+                        <div class="cuadro finito">605216</div>
+                        <div class="cuadro finito">605216</div>
+                        <div class="cuadro finito">605217</div>
+                        <div class="cuadro finito">605217</div>
+                        <div class="cuadro finito">605215</div>
+                    </div>
+                    <div class="alias">
+                        <h2 >Localizacion</h2>
+                        <div class="cuadro finito">000147/0/0</div>
+                        <div class="cuadro finito">000147/0/0</div>
+                        <div class="cuadro finito">000147/0/0</div>
+                        <div class="cuadro finito">000147/0/0</div>
+                        <div class="cuadro finito">000147/0/0</div>
+                        <div class="cuadro finito">000147/0/0</div>
+                        <div class="cuadro finito">000275/0/0</div>
+                        <div class="cuadro finito">000275/0/0</div>
+                        <div class="cuadro finito">000275/0/0</div>
+                        <div class="cuadro finito">000275/0/0</div>
+                        <div class="cuadro finito">000275/0/0</div>
+                        <div class="cuadro finito">000275/0/0</div>
+                        <!-- <div class="cuadro finito s">          </div> -->
+                        <div class="cuadro finito">006659/0/0</div>
+                        <div class="cuadro finito">006659/0/0</div>
+                        <div class="cuadro finito">006659/0/0</div>
+                        <div class="cuadro finito">006659/0/0</div>
+                        <div class="cuadro finito">006659/0/0</div>
+                        <div class="cuadro finito">006659/0/0</div>
+                    </div>
+                    <div class="alias">
+                        <h2 >Mercancia</h2>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <!-- <div class="cuadro finito s"></div> -->
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                        <div class="cuadro finito">H</div>
+                        <div class="cuadro finito">F, P</div>
+                    </div>
+                </div>
+            </section>
+            <section class="buton">
+                <button class="button">VOVLER</button>
+            </section>
+        </div>
+        <div class="principal">
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+            <div class="lineasEntrada">
+                <div>8</div>
+                <div>
+                    <p> . </p>
+                </div>
+                <div>Asignar Puestos</div>
+            </div>
+            <div class="lineasEntrada">
+                <div>9</div>
+                <div>
+                    <p> . </p>
+                </div>
+                <div>Desasignar Puestos</div>
+            </div>
+            <div class="lineasEntrada">
+                <div class="numeroDeCabecera"></div>
+                <div class="puntoDeCabecera"></div>
+                <div class="gruionDeCabecera"></div>
+            </div>
+        </div>
+    </main>
+    <script src="/script.js"></script>
+</body>
+
+</html>
